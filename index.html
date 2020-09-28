@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Karthik Ayinala</title>
+  <link href="assets/animate.css" rel="stylesheet">
+  <body>
+    
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="assets/jquery.fittext.js"></script>
+<script src="assets/jquery.lettering.js"></script>
+<script src="jquery.textillate.js"></script>
+  
+<div class="box">
+  <h1  class="tlt">
+    <ul class="texts">
+         <li class="rainbowText">Happy Birthday <br> Karthik</li>   
+         <li></li>
+    </ul>
+  </h1>
+</div>
+
+<h2>Karthik Ayinala</h2>
+
+<div class="image"></div>
+
+<style>
+
+.image {
+    position:relative;
+    height: 80%;
+    width:100%;
+    display: none;
+}
+
+.image img {
+    position: absolute;;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    margin:auto;
+}
+
+html, body {
+  margin: 10;
+  height: 100%;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #1b1a1ab2 74%);
+  color: #eee;
+}
+
+h2{
+  color:#E8E8E8	;
+font-size: 2em;
+font-family: "Comic Sans MS", cursive, sans-serif;
+display: none;
+text-align: center;
+  
+}
+  h1 {
+    color:#E8E8E8	;
+letter-spacing: .15em;
+font-size: 4em;
+font-family: "Comic Sans MS", cursive, sans-serif;
+text-align: center;
+padding-right: 0.1em;
+text-shadow: 2px 2px 0px rgba(245, 240, 240, 0.493);
+}
+.box {
+  width: 99%;
+  height: 99%;
+  display: table;
+  min-height: 10em;
+  
+ -webkit-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+     -moz-box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.1em;
+  vertical-align: middle;
+  text-align: center;
+  
+  padding-bottom: 15em;
+  padding-top: 11em;
+  padding-left: 1em;
+  padding-right: 1em;
+  }
+</style>
+
+
+  <script>  
+		$('.tlt').textillate({
+  in: {
+    effect: 'fadeInDownBig',
+    delayScale: 1.5,
+    delay: 50,
+    shuffle: true,
+    reverse: false,
+  },
+  out: {
+    effect: 'hinge',
+    delayScale: 1.5,
+    delay: 50,
+    sync: false,
+    shuffle: true,
+    reverse: false,
+    callback: function () {}
+  },
+
+  callback: function () {
+  
+	tempFunction();
+    
+  
+  }
+  
+
+  
+  ,
+});
+
+  function sleep(time) {
+   return new Promise(resolve => setTimeout(resolve, time));
+  }
+	async function tempFunction(){
+	 $( ".box" ).remove();
+    $('h2').fadeIn();
+	
+	//image 1
+    console.log("Showing image 1");
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "1.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "400");
+    $('.image').append(x);
+    $('.image').slideDown(2000).delay(3000).fadeOut(2000);
+		
+	//image 2
+	await sleep(7000);
+	$('.image').empty();
+    console.log("Showing image 2");
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "2.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "400");
+    $('.image').append(x);
+    $('.image').slideDown(2000).delay(3000).fadeOut(2000);
+	
+	
+	//image 3
+	await sleep(7000);
+	$('.image').empty();
+    console.log("Showing image 2");
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "3.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "470");
+    $('.image').append(x);
+    $('.image').slideDown(2000).delay(3000).fadeOut(2000);
+	
+	
+	
+	//image 4
+	await sleep(7000);
+	$('.image').empty();
+    console.log("Showing image 2");
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "4.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "450");
+    $('.image').append(x);
+    $('.image').slideDown(2000).delay(3000).fadeOut(2000);
+	
+	
+	//image 5
+	await sleep(7000);
+	$('.image').empty();
+    console.log("Showing image 2");
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "5.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "220");
+    $('.image').append(x);
+    $('.image').slideDown(2000).delay(3000).fadeOut(2000);
+	
+	
+
+		
+	}
+  
+
+	</script>
+  </body>
+</html>

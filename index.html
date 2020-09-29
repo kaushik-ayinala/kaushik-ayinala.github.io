@@ -6,12 +6,19 @@
   <title>Karthik Ayinala</title>
   <link href="assets/animate.css" rel="stylesheet">
   <body>
-    
+ 
+	<audio autoplay="autoplay">
+  <source src="assets/background.mp3" type="audio/mpeg">
+</audio>
+	
 <script src="assets/jquery.min.js"></script>
 <script src="assets/jquery.fittext.js"></script>
 <script src="assets/jquery.lettering.js"></script>
 <script src="jquery.textillate.js"></script>
   
+  
+
+ 
 <div class="box">
   <h1  class="tlt">
     <ul class="texts">
@@ -184,6 +191,17 @@ text-shadow: 2px 2px 0px rgba(245, 240, 240, 0.493);
     $('.image').append(x);
     $('.image').slideDown(2000).delay(3000).fadeOut(2000);
 	
+	
+		//image 6
+	await sleep(7000);
+	$('.image').empty();
+    console.log("Showing image 6");
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "6.png");
+    x.setAttribute("width", "304");
+    x.setAttribute("height", "450");
+    $('.image').append(x);
+    $('.image').slideDown(2000);
 	
 
 		
